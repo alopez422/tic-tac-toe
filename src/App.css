@@ -1,0 +1,102 @@
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: #1d043b;
+  background: linear-gradient(177deg,rgba(29, 4, 59, 1) 0%, rgba(153, 91, 213, 1) 95%);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+h1 {
+  color: white;
+}
+
+.reset{
+  margin-top: 12px;
+  width: 20vw
+}
+
+.grid{
+  position: relative;
+  width: min(90vw, 75vh);
+  height: min(90vw, 75vh);
+  display: grid;
+  background-color: transparent;
+  grid-template-areas: 
+  "TL TM TR " 
+  "ML MM MR " 
+  "BL BM BR ";
+  grid-template-columns: repeat(3, 4fr);
+  grid-template-rows: repeat(3, 4fr);
+  font-size: 300%;
+
+}
+
+button{
+  border-radius: 0px;
+}
+
+.grid button {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+button:hover, .reset:hover{
+  border: none
+}
+
+button:active, .reset:active{
+  border: none
+}
+
+
+  #TL{
+      grid-area: TL;
+    } 
+    #TM{
+      grid-area: TM;
+      border-left:  10px solid #31690f;
+      border-right:  10px solid #31690f;
+    } 
+    #TR{
+      grid-area: TR;
+    } 
+    #ML{
+      grid-area: ML;
+      border-top: 10px solid #96D74C;
+      border-bottom: 10px solid #96D74C ;
+    } 
+    #MM{ 
+      grid-area: MM;
+      border-left:  10px solid #31690f;
+      border-right:  10px solid #31690f;
+      border-top: 10px solid #96D74C;
+      border-bottom: 10px solid #96D74C ;
+
+    } 
+
+    #MR{
+      grid-area: MR;
+      border-top: 10px solid #96D74C;
+      border-bottom: 10px solid #96D74C ;
+
+    } 
+    #BL{
+        grid-area: BL;
+      } 
+    #BM{
+        grid-area: BM;
+        border-left:  10px solid #31690f;
+        border-right:  10px solid #31690f;
+      } 
+    #BR{
+        grid-area: BR;
+    }
